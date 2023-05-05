@@ -87,17 +87,17 @@ class Parrot extends Bird {
 var fiji = new Parrot(false); // we're passing `false` to the constructor so that fiji can't talk
 var polly = new Parrot(true); // we're passing `true` to the constructor so that polly can talk
 
-fiji.makeSound(); // undefined
-fiji.makeSound(true); // chirp
+// fiji.makeSound(); // undefined
+// fiji.makeSound(true); // chirp
 
-polly.makeSound(); // I'm a talking parrot!
-polly.makeSound(true); // chirp, I'm a talking parrot!
+// polly.makeSound(); // I'm a talking parrot!
+// polly.makeSound(true); // chirp, I'm a talking parrot!
 
-polly.color; // yellow
-polly.energy; // 100
+// polly.color; // yellow
+// polly.energy; // 100
 
-polly.isActive(); // Energy is decreasing, currently at: 80
-polly.isActive();
+// polly.isActive(); // Energy is decreasing, currently at: 80
+// polly.isActive();
 
 // var penguin = new Bird("shriek", false, "black and white", 200); // setting all the custom properties
 // penguin; // Bird {color: 'black and white', energy: 200, sound: 'shriek', canFly: false }
