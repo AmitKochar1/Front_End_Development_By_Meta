@@ -84,8 +84,9 @@ class Parrot extends Bird {
     }
 }
 
-var fiji = new Parrot(false); // we're passing `false` to the constructor so that fiji can't talk
-var polly = new Parrot(true); // we're passing `true` to the constructor so that polly can talk
+
+// var fiji = new Parrot(false); // we're passing `false` to the constructor so that fiji can't talk
+// var polly = new Parrot(true); // we're passing `true` to the constructor so that polly can talk
 
 // fiji.makeSound(); // undefined
 // fiji.makeSound(true); // chirp
@@ -93,14 +94,16 @@ var polly = new Parrot(true); // we're passing `true` to the constructor so that
 // polly.makeSound(); // I'm a talking parrot!
 // polly.makeSound(true); // chirp, I'm a talking parrot!
 
-// polly.color; // yellow
-// polly.energy; // 100
+//var c = polly.color; // yellow
+//console.log(polly.color);
+//var e = polly.energy; // 100
+// console.log(polly.energy);
 
 // polly.isActive(); // Energy is decreasing, currently at: 80
 // polly.isActive();
 
 // var penguin = new Bird("shriek", false, "black and white", 200); // setting all the custom properties
-// penguin; // Bird {color: 'black and white', energy: 200, sound: 'shriek', canFly: false }
+// console.log(penguin); // Bird {color: 'black and white', energy: 200, sound: 'shriek', canFly: false }
 
 // penguin.sound; // 'shriek'
 // penguin.canFly; // false
@@ -108,13 +111,25 @@ var polly = new Parrot(true); // we're passing `true` to the constructor so that
 // penguin.energy; // 200
 // penguin.isActive(); // Energy is decreasing, currently at: 180
 
-// var leo = new HouseCat();
+var leo = new HouseCat();
 
-// // leo, no purring please:
-// leo.makeSound(false); // meow
-// // leo, both purr and meow now:
-// leo.makeSound(true); // purr, meow
+// leo, no purring please:
+leo.makeSound(false); // meow
+// leo, both purr and meow now:
+leo.makeSound(true); // purr, meow
 
-// var cuddles = new Tiger();
-// cuddles.makeSound(false); // Roar!
-// cuddles.makeSound(true); // purr, Roar!
+var cuddles = new Tiger();
+cuddles.makeSound(false); // Roar!
+cuddles.makeSound(true); // purr, Roar!
+
+/**Classes use and description
+ * Classes are useful to re-use codes and can be inherited by other classes by using "extend" keyword,
+ * a sub-class can inherit properties from parent class using the "super keyword". Constructor is used to define
+ * the properties in a class and, and constructor properties can be inherited within sublass constructor using "super"
+ * inside constructor
+ * 
+ * "This" - this keyword allows or access the variables or parameters established in constructor of a class and only useable
+ * in its class. It is preffered because if the class name changes in future this wont result in useless code or break the code
+ * 
+ * Functions inside a class are called methods. A function can be created without the keyword "function" in classes.
+ */
