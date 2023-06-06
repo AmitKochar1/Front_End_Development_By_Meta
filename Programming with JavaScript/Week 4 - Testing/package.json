@@ -1,0 +1,14 @@
+{
+  "name": "week-4---testing",
+  "version": "1.0.0",
+  "description": "Installing Node and NPM Before installing Node.js and npm on your machine, you first need to verify if it's already installed.",
+  "main": "addFive.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
