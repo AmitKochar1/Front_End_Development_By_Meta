@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(180, 174, 174);
     font-family: Arial, Verdana, Tahoma, sans-serif;
     margin: 20px;
 }
@@ -44,16 +44,6 @@ nav a{
     text-decoration: none;
 }
 
-.banner{
-    display: block;
-    background-image: url("./Images/Italin_pasta.webp");
-    background-repeat: no-repeat;
-    padding: 10px;
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #a{
     text-decoration: none;
     color: black;
@@ -66,6 +56,7 @@ img{
 section{
     display: flex;
 }
+
 article{
     flex: 1;
 }
@@ -74,19 +65,35 @@ article > table{
     margin: 5px;
 }
 
+.banner{
+    flex: 1;
+    background-image: url("./Images/discount_image.jpg");
+    background-repeat: no-repeat;
+    padding: 10px;
+    margin: 15px;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    background-size: cover;
+}
+
+
 #article{
     flex: 1;
-    background-color: rgba(153, 170, 133, 0.507);
+    background-color: rgba(213, 219, 207, 0.507);
     margin: 20px 20px;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 20px;
     color: rgb(0, 0, 0);
     font-size: medium;
     padding: 20px;
 }
 
-#articleImage{
-    border-radius: 10px;
+.articleImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
 }
 
 p{
@@ -97,13 +104,30 @@ footer{
     display: flex;
 }
 
-footer div{
-    padding: 5px;
+/* .border{
+    border-top: 2px solid rgb(0, 0, 0);
+} */
+
+.footerLogo{
     flex: 1;
-    margin: 20px;
-    justify-content: center;
-    border-top: 2px solid rgb(148, 131, 131);
+    display: block;
+    padding: 0px;
+    margin: 30px;
+    text-align: left;
 }
 
+.copyRight{
+    flex: 1;
+    border-top: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    text-align: right;
+}
 
-
+.table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
