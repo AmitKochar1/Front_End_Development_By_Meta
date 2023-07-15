@@ -1,0 +1,19 @@
+body{
+    background-color: rgba(188, 232, 54, 0.516);
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+}
+
+li{
+    display: inline-flex;
+}
