@@ -1,34 +1,109 @@
-* {
-    background-color:aliceblue;
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    margin: 20px;
 }
 
-img {
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+nav{
+    background-color: rgba(48, 38, 37, 0.651);
+    margin: 30px 0;
+    padding: 0px;
+    border: 0px solid rgba(48, 38, 37, 0.651);
+    border-radius: 25px;
+}
+
+header > img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     text-align: center;
-    padding: 0;
 }
 
-li {
-    display:inline;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
-    font-size: medium;
+nav li {
+    display:inline-block;
+    padding: 5px 5px;
 }
 
-h1 {
-    color: rgb(2, 0, 15);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
-    font-size: medium;
+nav a{
+    font-weight: normal;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-decoration: none;
 }
 
-p {
+.banner{
+    display: block;
+    background-image: url("./Images/Italin_pasta.webp");
+    background-repeat: no-repeat;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    justify-content: center;
+}
+
+section{
+    display: flex;
+}
+article{
+    flex: 1;
+}
+article > table{
     text-align: center;
-    color: rgb(2, 0, 15);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
-    font-size: medium;
+    margin: 5px;
 }
+
+#article{
+    flex: 1;
+    background-color: rgba(153, 170, 133, 0.507);
+    margin: 20px 20px;
+    text-align: center;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    padding: 20px;
+}
+
+#articleImage{
+    border-radius: 10px;
+}
+
+p{
+    text-align: justify;
+}
+
+footer{
+    display: flex;
+}
+
+footer div{
+    padding: 5px;
+    flex: 1;
+    margin: 20px;
+    justify-content: center;
+    border-top: 2px solid rgb(148, 131, 131);
+}
+
+
+
