@@ -1,0 +1,18 @@
+Additional reading:
+
+Below you will find links to helpful additional readings.
+
+nodejs.org - https://nodejs.org/en
+ 
+
+npmjs.com - https://www.npmjs.com/
+ 
+
+reactjs.org - https://react.dev/
+ 
+
+https://create-react-app.dev/ - https://create-react-app.dev/
+ 
+
+VS Code
+ 
