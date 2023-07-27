@@ -1,30 +1,30 @@
-function Square({value}){
-  function eventHandler(){
-    console.log('Clicked me!!')
-  }
+import { useState } from "react";
+
+function RegisterForm(){
+  const[form, setForm] = useState({
+    firstName: "Amit",
+    lastName: "kochar",
+    email: "amitkochar91@gmail.com"
+  })
+
   return(
-    <button className="square" onClick={eventHandler}>{value}</button>
+    <>
+    <label>
+      First Name: <input value={form.firstName} onChange={e => setForm({...form, firstName: e.target.value})}/>
+    </label>
+    <label>
+      Last Name: <input value={form.lastName} onChange={e => setForm({...form, lastName: e.target.value})}/>
+    </label>
+    <label>
+      Email: <input value={form.email} onChange={e => setForm({...form, email: e.target.value})}/>
+    </label>
+    <p>
+      {form.firstName}{' '}
+      {form.lastName}{' '}
+      {form.email}{' '}
+    </p>
+    </>
   )
 }
 
-export default function Board() {
-  return(
-    <>
-    <div className='board-row'>
-    <Square value={1}/>
-    <Square value={2}/>
-    <Square value={3}/>
-    </div>
-    <div className='board-row' >
-    <Square value={4}/>
-    <Square value={5}/>
-    <Square value={6}/>
-    </div>
-    <div className='board-row' >
-    <Square value={7}/>
-    <Square value={8}/>
-    <Square value={9}/>
-    </div>
-    </>
-  );
-}
+export default RegisterForm;
