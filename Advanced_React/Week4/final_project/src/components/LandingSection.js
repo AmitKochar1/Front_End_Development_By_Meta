@@ -15,7 +15,12 @@ const LandingSection = () => (
     isDarkBackground
     backgroundColor="#2A4365"
   >
-
+    <img src="https://i.pravatar.cc/150?img=7" alt='Author_pic'/>
+    <h1>{greeting}</h1>
+    <VStack fontSize='30px' >
+    <h2>{bio1}</h2>
+    <h2>{bio2}</h2>
+    </VStack>
   </FullScreenSection>
 );
 
